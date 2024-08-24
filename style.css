@@ -21,6 +21,12 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: baseline;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -46,6 +52,7 @@ body {
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 10px #FFFFFF;
+    transition: transform .2s;
 }
 
 .game-card {
@@ -55,12 +62,15 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    transition: transform .2s;
 }
 
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.2);
 }
+
 
 #button-container {
     text-align: center;
@@ -72,4 +82,10 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+    font-weight: 900;
 }
